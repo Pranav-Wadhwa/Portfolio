@@ -1,0 +1,106 @@
+.Detail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 32px;
+}
+
+.Detail-title {
+    margin-bottom: 16px;
+
+    @include lt_lg {
+        font-size: 64px;
+    }
+}
+
+.Detail-subtitle {
+    @include lato-font;
+    font-size: 28px;
+    color: $white-3;
+
+    @include lt_lg {
+        font-size: 22px;
+    }
+}
+
+.Detail-screenshots {
+    max-height: 1000px;
+    max-width: 100%;
+}
+
+.DetailBox-container {
+    display: flex;
+    margin: 32px 0;
+
+    @include sm {
+        flex-direction: column;
+    }
+}
+
+.Detail-linkContainer {
+    display: flex;
+    margin: 32px 0 16px;
+}
+
+.Detail-link {
+    border: 2px solid var(--project-color);
+    color: var(--project-color);
+    padding: 12px 24px;
+    border-radius: 100px;
+    margin-right: 16px;
+    transition: all 0.3s;
+
+    &:hover {
+        background: var(--project-color);
+        color: white;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &::after {
+        content: none;
+    }
+}
+
+.Detail-section {
+    width: 100%;
+    max-width: 800px;
+    margin: 16px;
+}
+
+.Detail-sectionHeader {
+    margin-bottom: 8px;
+}
+
+.Detail-sectionBody {
+    color: $white-2;
+    line-height: 1.4;
+    
+    & > b {
+        color: white;
+    }
+
+    & > a::after {
+        width: 100%;
+        left: 0;
+    }
+}
+
+.Detail-toolsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.Detail-tool {
+    flex: 0 0 auto;
+    padding: 4px 12px;
+    border: 1px solid white;
+    height: 30px;
+    border-radius: 15px;
+    margin-right: 8px;
+    margin-bottom: 16px;
+}

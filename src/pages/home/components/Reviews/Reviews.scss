@@ -1,0 +1,91 @@
+.section.Reviews {
+    min-height: auto;
+    padding: 64px 32px;
+}
+
+.Reviews-container {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    overflow: hidden;
+    padding-bottom: 2px;
+}
+
+.Review-container {
+    flex: 0 0 100%;
+    transition: all 0.3s;
+}
+
+.Review-textContainer {
+    display: flex;
+}
+
+.Review-quote {
+    display: block;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 0.9;
+    margin-right: 16px;
+
+    @include md {
+        font-size: 64px;
+        margin-right: 12px;
+    }
+
+    @include sm {
+        font-size: 32px;
+        margin-right: 8px;
+    }
+}
+
+.Review-reviewerName {
+    text-align: right;
+    margin-top: 16px;
+}
+
+.Review-reviewerTitle {
+    text-align: right;
+    font-weight: 400;
+
+    & > a {
+        font-weight: 500;
+
+        &::after {
+            height: 1px;
+            width: 100%;
+            left: 0;
+        }
+    }
+}
+
+.Review-bottomContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.Review-button {
+    background: $primary-dark;
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+
+    &:hover {
+        background: $primary-dark;
+    }
+
+    @media (hover: hover) {
+        &:hover:enabled {
+            background: $primary-light;
+        }
+    }
+
+    &:disabled {
+        opacity: 0.4;
+    }
+}
+
+.Review-progress {
+    @include gelasio-font;
+    margin: 0 16px;
+}

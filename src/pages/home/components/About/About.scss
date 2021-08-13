@@ -1,0 +1,107 @@
+.About.section {
+    min-height: auto;
+}
+
+.About-container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 64px;
+
+    @include lt_lg {
+        flex-direction: column;
+        margin-bottom: 32px;
+    }
+}
+
+.About-header {
+    height: 64px;
+    margin: 64px 0 16px;
+
+    @include lt_lg {
+        height: auto;
+        margin-top: 32px;
+    }
+}
+
+.About-left {
+    flex: 1 1 50%;
+    height: 100%;
+    margin-right: 60px;
+
+    @include lt_lg {
+        margin-right: 0;
+        padding-bottom: 32px;
+        margin-bottom: 32px;
+        border-bottom: 1px solid $white-3;
+    }
+}
+
+.About-right {
+    flex: 1 1 50%;
+    height: 100%;
+    padding-top: 144px;
+
+    @include lt_lg {
+        padding-top: 0;
+    }
+}
+
+.About-picture {
+    max-height: 225px;
+    margin: 32px 0;
+}
+
+.About-subheader {
+    @include gelasio-font;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 32px 0 24px;
+
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+.AboutSection-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.AboutSection-title {
+    color: $white-3;
+    flex: 1;
+    margin-right: 24px;
+}
+
+.AboutSection-time {
+    color: $white-3;
+    font-size: 14px;
+    flex: 0 0 auto;
+}
+
+.AboutSection-url {
+    color: $white-3;
+    font-weight: 600;
+}
+
+.About-skillsContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.About-skill {
+    margin: 0 8px 8px 0;
+    padding: 8px 24px;
+    background: $primary-dark;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,52 @@
+{
+  "hosting": {
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/resume",
+        "destination": "/files/Pranav Wadhwa Resume.pdf"
+      },
+      {
+        "source": "/yourfood_paper",
+        "destination": "/files/YourFood Research Paper.pdf"
+      },
+      {
+        "source": "/upright",
+        "destination": "/upright.html"
+      },
+      {
+        "source": "/biopath",
+        "destination": "/biopath.html"
+      },
+      {
+        "source": "/delfi",
+        "destination": "/delfi.html"
+      },
+      {
+        "source": "/lecture_noted",
+        "destination": "/lecture_noted.html"
+      },
+      {
+        "source": "/simpl",
+        "destination": "/simpl.html"
+      },
+      {
+        "source": "/yourfood",
+        "destination": "/yourfood.html"
+      },
+      {
+        "source": "/gap",
+        "destination": "/gap.html"
+      },
+      {
+        "source": "/flybuy",
+        "destination": "/flybuy.html"
+      }
+    ]
+  }
+}

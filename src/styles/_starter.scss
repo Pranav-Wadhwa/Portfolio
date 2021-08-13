@@ -1,0 +1,162 @@
+html {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    @include lato-font;
+    background: $primary;
+    color: $white-0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+span,
+button,
+a {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    @include gelasio-font;
+    font-weight: 500;
+    font-size: 80px;
+    color: $white-0;
+    margin: 0 0 32px;
+}
+
+h2 {
+    @include gelasio-font;
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+}
+
+h3 {
+    @include lato-font;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+h4 {
+    @include gelasio-font;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+h5 {
+    @include lato-font;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+h6 {
+    @include lato-font;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+p,
+a {
+    @include lato-font;
+    font-weight: 400;
+    font-size: 16px;
+    color: $white-2;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    font-weight: 700;
+
+    &::after {
+        content: " ";
+        position: absolute;
+        bottom: -2px;
+        height: 1.5px;
+        left: 50%;
+        width: 0;
+        transition: all 0.25s;
+        background: white;
+    }
+
+    &:hover::after {
+        width: calc(100% + 4px);
+        left: -2px;
+    }
+}
+
+.section {
+    min-height: 100vh;
+    width: 100%;
+    padding: 16px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include lt_lg {
+        height: auto;
+    }
+}
+
+button,
+.button {
+    @include lato-font;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    width: 225px;
+    height: 50px;
+
+    background: $secondary;
+    color: $primary;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 0.25s;
+
+    &:hover {
+        background: $secondary-dark;
+    }
+}
+
+.header {
+    margin: 64px 0 16px;
+    text-align: center;
+
+    @include sm {
+        margin-top: 32px;
+        font-size: 36px;
+    }
+}
+
+.subheader {
+    color: $white-3;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+#app {
+    width: 100%;
+}

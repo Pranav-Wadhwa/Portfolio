@@ -1,0 +1,87 @@
+.Contact.section {
+    min-height: auto;
+    background-color: $primary-dark;
+}
+
+.Contact-container {
+    width: 100%;
+    max-width: 1000px;
+    padding: 64px 0;
+}
+
+.Contact-links {
+    margin: 64px 0 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include sm {
+        margin-bottom: 0;
+    }
+}
+
+.header.Contact-header {
+    @include sm {
+        margin-top: 0;
+    }
+}
+
+.Contact-link {
+    display: flex;
+    padding: 16px 24px;
+    background: $primary;
+    margin: 0 16px 16px 0;
+    flex: 1;
+    align-items: center;
+    border-radius: 8px;
+    transition: background 0.3s;
+    max-width: 325px;
+
+    &:hover > .Contact-arrow {
+        opacity: 1;
+    }
+
+    &::after {
+        content: none;
+    }
+
+    &:last-child {
+        margin-right: 0;
+
+        @include sm {
+            margin-bottom: 0;
+        }
+    }
+
+    @include sm {
+        max-width: none;
+        flex: 0 0 100%;
+        margin-right: 0;
+    }
+}
+
+.Contact-spacer {
+    flex: 1 0 16px;
+}
+
+.Contact-arrow {
+    opacity: 0;
+    transition: all 0.3s;
+    margin-right: 4px;
+}
+
+.Contact-icon {
+    max-height: 20px;
+    margin-right: 16px;
+}
+
+.Contact-title {
+    font-weight: 700;
+}
+
+.Contact-subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 2px;
+    white-space: nowrap;
+}

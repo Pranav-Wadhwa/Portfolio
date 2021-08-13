@@ -1,0 +1,13 @@
+.Projects.section {
+    background: $primary-dark;
+    min-height: 0;
+    padding-bottom: 64px;
+}
+
+.Projects-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}

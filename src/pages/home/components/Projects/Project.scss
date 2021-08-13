@@ -1,0 +1,97 @@
+$width: 35%;
+$max-width: 650px;
+
+.Project {
+    position: relative;
+    flex: 0 0 auto;
+    width: $width;
+    padding-bottom: calc(min(#{$width}, #{$max-width}));
+    min-width: 375px;
+    min-height: 375px;
+    max-width: $max-width;
+    max-height: $max-width;
+    margin: 32px;
+    border-radius: 32px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: all 0.3s;
+
+    @include sm {
+        min-width: 0;
+        min-height: 0;
+        width: 100%;
+        padding-bottom: 125%;
+        margin: 0 0 16px;
+    }
+}
+
+.Project:hover {
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+
+    & > .Project-bg {
+        background: rgba(0, 0, 0, 0.15) linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.25));
+    }
+}
+
+.Project-bg {
+    pointer-events: none;
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.25));
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.3s;
+}
+
+.Project-imgContainer {
+    flex: 1;
+    position: relative;
+    margin-top: 8px;
+}
+
+.Project-previewImg {
+    position: absolute;
+    transition: all 0.3s;
+    max-height: 100%;
+    object-fit: contain;
+
+    @include sm {
+        align-self: center;
+        position: static;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+.Project-spacer {
+    @include sm {
+        flex: 1;
+    }
+}
+
+.Project-content {
+    position: absolute;
+    left: 32px;
+    right: 32px;
+    top: 32px;
+    bottom: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Project-title {
+    color: white;
+    flex: 0 0 auto;
+    margin: 0 0 8px;
+    font-size: 32px;
+}
+
+.Project-tagline {
+    flex: 0 0 auto;
+    font-weight: 400;
+    color: $white-1;
+}

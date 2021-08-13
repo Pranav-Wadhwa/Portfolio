@@ -1,0 +1,24 @@
+.DetailBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid white;
+    padding: 8px 24px;
+
+    &:last-child {
+        border: none;
+    }
+
+    @include sm {
+        align-items: flex-start;
+        padding: 16px 0;
+        border-right: none;
+        border-bottom: 1px solid white;
+    }
+}
+
+.DetailBox-header {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 4px;
+}

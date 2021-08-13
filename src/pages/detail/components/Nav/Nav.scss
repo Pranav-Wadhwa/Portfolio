@@ -1,0 +1,12 @@
+.Nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 32px 32px;
+    width: 100%;
+}
+
+.Nav-link {
+    @include gelasio-font;
+    font-weight: 500;
+}
