@@ -1,6 +1,8 @@
-# portfolio
+# Portfolio
 
-## Project setup
+This is the source code for my portfolio website [pranavwadhwa.com](https://pranavwadhwa.com). Built using [Vue JS](https://vuejs.org).
+
+### Project setup
 ```
 npm install
 ```
@@ -15,10 +17,12 @@ npm run serve
 npm run build
 ```
 
+### Builds project and deploys to Firebase hosting
+```
+npm run build-deploy
+```
+
 ### Lints and fixes files
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
