@@ -85,3 +85,12 @@
     margin-top: 2px;
     white-space: nowrap;
 }
+
+.Contact-sourceCode {
+    text-align: center;
+
+    & > a::after {
+        width: calc(100% + 4px);
+        left: -2px;
+    }
+}

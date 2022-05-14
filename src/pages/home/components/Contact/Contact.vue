@@ -27,6 +27,10 @@
           />
         </a>
       </div>
+      <p class="Contact-sourceCode">
+        Built using Vue JS. View
+        <a href="https://github.com/Pranav-Wadhwa/Portfolio">source code</a>.
+      </p>
     </div>
   </div>
 </template>
