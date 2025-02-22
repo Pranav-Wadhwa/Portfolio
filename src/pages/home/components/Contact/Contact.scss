@@ -14,10 +14,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-    @include sm {
-        margin-bottom: 0;
-    }
 }
 
 .header.Contact-header {
@@ -92,5 +88,9 @@
     & > a::after {
         width: calc(100% + 4px);
         left: -2px;
+    }
+
+    @include sm {
+        margin-bottom: 0;
     }
 }

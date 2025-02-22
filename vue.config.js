@@ -68,13 +68,13 @@ module.exports = {
   },
   css: {
     loaderOptions: {
-      sass: {
-        data: `
-                    @import "@/styles/_variables.scss";
-                    @import "@/styles/_fonts.scss";
-                    @import "@/styles/_breakpoints.scss";
-                    `
-      }
+    sass: {
+    additionalData: `
+                @import "@/styles/_variables.scss";
+                @import "@/styles/_fonts.scss";
+                @import "@/styles/_breakpoints.scss";
+                `
+    }
     }
   },
   configureWebpack: {
